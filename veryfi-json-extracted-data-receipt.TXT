@@ -1,0 +1,176 @@
+{
+  "account_number": null,
+  "accounting_entry_type": "debit",
+  "balance": null,
+  "barcodes": [],
+  "bill_to": {
+    "address": null,
+    "email": null,
+    "name": null,
+    "parsed_address": null,
+    "phone_number": null,
+    "reg_number": null,
+    "vat_number": null
+  },
+  "cashback": null,
+  "category": "Meals & Entertainment",
+  "created_date": "2025-02-04 14:34:19",
+  "currency_code": "USD",
+  "custom_fields": {},
+  "date": "2025-02-04 14:34:18",
+  "default_category": "Meals & Entertainment",
+  "delivery_date": null,
+  "delivery_note_number": null,
+  "discount": null,
+  "document_reference_number": null,
+  "document_title": null,
+  "document_type": "receipt",
+  "due_date": null,
+  "duplicate_of": null,
+  "exch_rate": 1,
+  "external_id": null,
+  "final_balance": null,
+  "guest_count": null,
+  "id": 281121864,
+  "img_blur": false,
+  "img_file_name": "281121864.jpg",
+  "img_thumbnail_url": "https://scdn.veryfi.com/receipts/a97b60d6266cfadf/9eff898b-e9d8-47df-a9fb-80844005116a/thumbnail.jpg?Expires=1738683263&Signature=ZpIPdxth7LQvbx-WPZXUPIYWigx7DAUIKEDH0hQAEv~QQq8PqfK27OudLIXG--drCNUOvICQwUcAKyYxUmI6t4l1gOsks5BRWiuIiNzwA~bRHygsKYY1~Z1~qPV-miX~r5oSHLY0Qw0fokfHEmC-ro~yOWzXhOoJclXmVfMLEPKxzQ49Npa8EDEOdootYpBQE7dO~ki5U8IwlewLmjszI-87CBY-OWVhBe7U~e5A-mGLPuyRgU49~YahKHxQwUFFEjK4XQblqWljFESrYAPlVXI6CWehn672sjSLZtjWIMtD3SPHwWpmWtIPpIHXStH0FFHzFPv6HNlbk3dZlNXHyg__&Key-Pair-Id=APKAJCILBXEJFZF4DCHQ",
+  "img_url": "https://scdn.veryfi.com/receipts/a97b60d6266cfadf/9eff898b-e9d8-47df-a9fb-80844005116a/b6e844a9-86e7-4f21-81d9-57f5b6d77ee3.jpg?Expires=1738683263&Signature=YqEg~wtoWeb8ra1RfJcwMO1bA5XFTTRzxkZz3PaGyz7KcM2DkdhO~ZMKTphnuqhcQyE6T2igwdTBVoJYMHzW2u0NopkOO~sxzjpb2zgA3P4C5wZI12-ZtVRkTQClty8Bhs9cthBQCf0-Gu1Wf4M0e89MnxNqYedjGEmfZna-18gPrDouCHP4LqVyrxN1dXdZAl~hwvEYC1l5q6AUmEHgbWcYJo~vNM9G8Q8uZ7w7nUGFSc7CkuNMfzlDY4eNS6~eTDNoSZH0R9e8tw-84GH3luGIp1hznKimNU-6eURrpmLYQ8v42UyK3gKXWm-a-fJh6s1cwlJ~amGEceg6jp1Lig__&Key-Pair-Id=APKAJCILBXEJFZF4DCHQ",
+  "incoterms": null,
+  "insurance": null,
+  "invoice_number": null,
+  "is_approved": false,
+  "is_blurry": [
+    false
+  ],
+  "is_document": true,
+  "is_duplicate": false,
+  "is_money_in": false,
+  "license_plate_number": null,
+  "line_items": [],
+  "meta": {
+    "fraud": {
+      "attribution": null,
+      "color": "green",
+      "decision": "Not Fraud",
+      "images": [
+        {
+          "is_lcd": false,
+          "score": 0.95
+        }
+      ],
+      "pages": [
+        {
+          "is_lcd": {
+            "score": 0.95,
+            "value": false
+          }
+        }
+      ],
+      "score": 0.05,
+      "submissions": {},
+      "types": [],
+      "version": null
+    },
+    "fraud_review": {
+      "decision": null,
+      "types": []
+    },
+    "handwritten_fields": [],
+    "language": [
+      "en",
+      "nl"
+    ],
+    "ocr_score": 0.959,
+    "owner": "api_demo",
+    "pages": [
+      {
+        "height": 3024,
+        "is_blurry": {
+          "score": 0.95,
+          "value": false
+        },
+        "language": [
+          "en",
+          "nl"
+        ],
+        "width": 4032
+      }
+    ],
+    "processed_pages": 1,
+    "source": "api",
+    "source_documents": [
+      {
+        "height": 4032,
+        "size_kb": 3409,
+        "width": 3024
+      }
+    ],
+    "total_pages": 1,
+    "warnings": [
+      {
+        "message": "Subtotal for Line Items 0 doesn't match subtotal on document 10.0",
+        "type": "totals_missmatch"
+      }
+    ]
+  },
+  "notes": null,
+  "order_date": null,
+  "payment": {
+    "card_number": null,
+    "display_name": null,
+    "terms": null,
+    "type": null
+  },
+  "pdf_url": "https://scdn.veryfi.com/receipts/a97b60d6266cfadf/9eff898b-e9d8-47df-a9fb-80844005116a/6476a8a9-e151-49b4-b023-5ccbbc58cccb.pdf?Expires=1738683263&Signature=WY-izeoO3DRxKnLNFUhwNbYG4NXwkNrsWjFTvdiI6t9f~MPlQMeMWVLFpD84aH~OIE3GydXZAzh7jFLB2rcrfXoNC9qzYcEsz-IC4ZtMBcUC0O0pfXSZqnmJh3fJsmYyhcpIvnfxfJp~kO3AAIefGrGki2HPTNtCFZ7cV1Y1PT59kdiHXdFWLceEl8V4xsGgYVcObzii90dV0cNk~8GAjqdR5UcWV9sVAEHF3kIissuzO0qdFjtwGL7NMirdjDXtgGkXoaMim5t3tpbaOks4XicOOetx9~LPMfVRN6o1Xm~rgqh2BIDJwVTJYePFd6PeOkj6b1geS2AvTzqXGMTTXg__&Key-Pair-Id=APKAJCILBXEJFZF4DCHQ",
+  "purchase_order_number": null,
+  "reference_number": "VCGDB-21864",
+  "rounding": null,
+  "service_end_date": null,
+  "service_start_date": null,
+  "ship_date": null,
+  "ship_to": {
+    "address": null,
+    "name": null,
+    "parsed_address": null
+  },
+  "shipping": null,
+  "store_number": null,
+  "subtotal": 10,
+  "tags": [],
+  "tax": null,
+  "tax_lines": [],
+  "tip": null,
+  "total": 10,
+  "total_weight": null,
+  "tracking_number": null,
+  "updated_date": "2025-02-04 14:34:23",
+  "vending_person": null,
+  "vending_person_number": null,
+  "vendor": {
+    "abn_number": null,
+    "account_number": null,
+    "address": null,
+    "bank_name": null,
+    "bank_number": null,
+    "bank_swift": null,
+    "category": "Grocery",
+    "email": null,
+    "fax_number": null,
+    "iban": null,
+    "lat": null,
+    "lng": null,
+    "logo": "https://cdn.veryfi.com/logos/us/421658525.png",
+    "map_url": null,
+    "name": "Chewy",
+    "parsed_address": {},
+    "phone_number": null,
+    "raw_address": null,
+    "raw_name": null,
+    "reg_number": null,
+    "type": "Grocery",
+    "vat_number": null,
+    "web": null
+  },
+  "vendors": []
+}
