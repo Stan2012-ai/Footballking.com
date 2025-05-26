@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FootballKing – YouTube kanaal</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 1em;
+      background: #f9f9f9;
+      color: #111;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 2em;
+    }
+    header h1 {
+      margin: 0.3em 0;
+    }
+    #subs {
+      font-size: 1.2em;
+      color: #555;
+    }
+    #videos {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1em;
+      justify-content: center;
+    }
+    .video {
+      width: 280px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 0 6px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+    .video img {
+      width: 100%;
+      display: block;
+    }
+    .video a {
+      text-decoration: none;
+      color: #222;
+      display: block;
+      padding: 0.5em;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>FootballKing – @micklinden331</h1>
+    <div id="subs">Abonnees: laden...</div>
+  </header>
+
+  <section>
+    <h2>Alle video’s van het kanaal</h2>
+    <div id="videos">Video’s laden...</div>
+  </section>
+
+  <script>
+    const API_KEY = 'AIzaSyCdSYDxgzy2lqXo9Up1WLpXzqtH3KcZ5-8';
+    const CHANNEL_ID = 'UCDlaf3jfg_DVu0CdQ4pgEAw';
+
+    const subsEl = document.getElementById('subs');
+    const videosEl = document.getElementById('videos');
+
+    async function fetchChannelInfo() {
+      const url = https://www.googleapis.com/youtube/v3/channels?part=statistics&id=${CHANNEL_ID}&key=${API_KEY};
+      const res = await fetch(url);
+      const data = await res.json();
+      if(data.items && data.items.length > 0) {
+        const subs = data.items[0].statistics.subscriberCount;
+        subsEl.textContent = Abonnees: ${Number(subs).toLocaleString('nl-NL')};
+      } else {
+        subsEl.textContent = 'Abonnees: niet beschikbaar';
+      }
+    }
+
+    async function fetchVideos(pageToken = '') {
+      const url = https://www.googleapis.com/youtube/v3/search?key=${API_KEY}&channelId=${CHANNEL_ID}&part=snippet,id&order=date&maxResults=50&pageToken=${pageToken};
+      const res = await fetch(url);
+      const data = await res.json();
+
+      if(!data.items) {
+        videosEl.textContent = 'Video’s niet beschikbaar';
+        return;
+      }
+
+      data.items.forEach(item => {
+        if(item.id.kind === 'youtube#video') {
+          const videoId = item.id.videoId;
+          const title = item.snippet.title;
+          const thumb = item.snippet.thumbnails.medium.url;
+
+          const videoDiv = document.createElement('div');
+          videoDiv.className = 'video';
+          videoDiv.innerHTML = `
+            <a href="https://www.youtube.com/watch?v=${videoId}" target="_blank" rel="noopener noreferrer">
+              <img src="${thumb}" alt="${title}" />
+              <div>${title}</div>
+            </a>
+          `;
+          videosEl.appendChild(videoDiv);
+        }
+      });
+
+      if(data.nextPageToken) {
+        await fetchVideos(data.nextPageToken);
+      }
+    }
+
+    fetchChannelInfo();
+    fetchVideos();
+  </script>
+</body>
+</html>
